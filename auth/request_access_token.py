@@ -38,7 +38,7 @@ def request_access_token(event, context):
         'exp': datetime.datetime.utcnow() + datetime.timedelta(seconds=10),
         'iat': datetime.datetime.utcnow()
     }
-    # The access_token is of type bytes in python3. Therefore the bytes are
+    # The access_token is type bytes in python3. Therefore the bytes are
     # converted to a string and sent back
     access_token = jwt.encode(payload, SECRET_KEY, algorithm='HS256')
 
