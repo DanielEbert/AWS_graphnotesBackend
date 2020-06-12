@@ -5,8 +5,6 @@ import datetime
 import boto3
 
 
-SECRET_KEY = "7ba933c6a65cc9f786e7d50b7aa97ad6b5a4220d77880a2db974bf49d7ed1554"
-
 dynamodb = boto3.client('dynamodb')
 
 def request_access_token(event, context):
